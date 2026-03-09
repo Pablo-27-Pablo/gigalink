@@ -26,10 +26,10 @@ export default function DashboardLayout({
   // Navigation Items matching your image
   const menuItems = [
     { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-    { name: "Services", href: "/dashboard/no_dashboard", icon: Settings },
+    { name: "Services", href: "/dashboard/services", icon: Settings },
     { name: "Active Vouchers", href: "/dashboard/no_dashboard", icon: Ticket },
-    { name: "History", href: "/dashboard/no_dashboard", icon: History },
-    { name: "Profile", href: "/dashboard/user_profile", icon: User },
+    { name: "History", href: "/dashboard/history", icon: History },
+    { name: "Profile", href: "/dashboard/user-profile", icon: User },
   ];
 
   return (
