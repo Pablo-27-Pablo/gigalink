@@ -88,6 +88,7 @@ export default function Login() {
                 />
                 <input
                   type="email"
+                  suppressHydrationWarning
                   value={credentials.email}
                   onChange={(e) =>
                     setCredentials({ ...credentials, email: e.target.value })

@@ -40,28 +40,37 @@ const serviceDefinitions = [
   {
     id: 1,
     name: "Basic Plan",
-    matchDesc: "1GB for 5 Mins",
+    matchDesc: "Basic Plan",
     price: "₱10",
     data: "1GB",
-    validity: "5 Mins",
+    validity: "1 Day",
     popular: false,
   },
   {
     id: 2,
-    name: "Medium Plan",
-    matchDesc: "2GB for 10 Mins",
+    name: "Standard Plan",
+    matchDesc: "Standard Plan",
     price: "₱20",
     data: "2GB",
-    validity: "10 Mins",
+    validity: "3 days",
     popular: true,
   },
   {
     id: 3,
     name: "Premium Plan",
-    matchDesc: "5GB for 1 Hour",
+    matchDesc: "Premium Plan",
     price: "₱50",
     data: "5GB",
-    validity: "1 Hour",
+    validity: "15 Days",
+    popular: false,
+  },
+  {
+    id: 4,
+    name: "Giga Plan",
+    matchDesc: "Giga Plan",
+    price: "₱50",
+    data: "10GB",
+    validity: "30 Days",
     popular: false,
   },
 ];
@@ -180,7 +189,7 @@ export default function Services() {
   }
 
   return (
-    <div className="space-y-8 p-10 bg-slate-50 dark:bg-slate-900 min-h-screen">
+    <div className="space-y-8 p-10  dark:bg-slate-900 min-h-screen">
       <div className="text-center max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
           Our Services
@@ -351,7 +360,10 @@ export default function Services() {
 
             <div className="p-8 flex flex-col items-center">
               <div className="bg-white p-4 rounded-2xl shadow-inner border border-slate-100 mb-6">
-                <QRCodeSVG value={generatedVouchers[0].code} size={200} />
+                <QRCodeSVG
+                  value={`https://gigalink.comclark.com/login.html?voucher=${generatedVouchers[0].code}`}
+                  size={200}
+                />
               </div>
 
               <div className="text-center space-y-2 mb-8">
