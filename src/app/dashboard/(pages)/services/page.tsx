@@ -291,7 +291,7 @@ export default function Services() {
                 )}
                 disabled={service.unused === 0}
               >
-                {service.unused > 0 ? "Generate Voucher" : "Out of Stock"}
+                {service.unused > 0 ? "Generate QR Code" : "Out of Stock"}
               </button>
             </div>
           </div>
