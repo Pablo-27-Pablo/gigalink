@@ -22,8 +22,9 @@ interface Batch {
 }
 
 const getPlanDisplayName = (desc: string) => {
-  if (desc.includes("1GB")) return "Basic Plan";
-  if (desc.includes("2GB")) return "Medium Plan";
+  if (desc.includes("Basic")) return "Basic Plan";
+  if (desc.includes("Medium")) return "Medium Plan";
+  if (desc.includes("Giga")) return "Giga Plan";
   return "Standard Plan";
 };
 
