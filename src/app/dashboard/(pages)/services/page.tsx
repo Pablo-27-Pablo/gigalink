@@ -361,7 +361,7 @@ export default function Services() {
             <div className="p-8 flex flex-col items-center">
               <div className="bg-white p-4 rounded-2xl shadow-inner border border-slate-100 mb-6">
                 <QRCodeSVG
-                  value={`https://gigalink.comclark.com/login.html?voucher=${generatedVouchers[0].code}`}
+                  value={`https://gigaportal.comclark.com/login.html?voucher=${generatedVouchers[0].code}`}
                   size={200}
                 />
               </div>
